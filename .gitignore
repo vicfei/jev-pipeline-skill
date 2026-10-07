@@ -3,3 +3,5 @@ __pycache__/
 *.egg-info/
 jev-pipeline-out/
 .DS_Store
+dsh-plugin/node_modules/
+dsh-plugin/lib/

@@ -1,0 +1,12 @@
+This product includes software developed as part of jev-pipeline-skill (MIT).
+
+The DeepSeek Harness plugin adapter structure (Cordis plugin exports, defineTool
+tool declarations, dsh manifest and cordis.patch.yml bundle pattern) follows the
+publicly documented pattern of jevcore-dsh:
+  PerryLink/jevcore — packages/dsh — Apache-2.0 — https://github.com/PerryLink/jevcore
+No source code from that project is included here; the three tools in this
+package shell out to the local jev_pipeline CLI instead.
+
+The pipeline itself orchestrates these upstream tools by reference (never copied):
+  VBS2004/jev-questions-skill (MIT) — lint, spread, threshold, coverage
+  abhisheksharma001/jev-skill (MIT) — find_decision_calls, fit_check

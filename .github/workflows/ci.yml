@@ -22,3 +22,20 @@ jobs:
         run: python -m jev_pipeline tools-sync
       - name: Test
         run: python -m pytest tests/ -q
+
+  plugin-typecheck:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dsh-plugin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install
+        run: npm install --no-fund --no-audit
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Build
+        run: npm run build

@@ -1,0 +1,8 @@
+- insert:
+    - id: jev-pipeline
+      name: 'jev-pipeline-dsh'
+      config:
+        # Python interpreter that has jev_pipeline importable.
+        python: python3
+        # Workdir for pipeline state and reports, relative to the workspace.
+        out: jev-pipeline-out

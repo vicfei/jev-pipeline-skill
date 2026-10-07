@@ -1,0 +1,66 @@
+{
+  "name": "jev-pipeline-dsh",
+  "version": "0.1.0",
+  "description": "jev-pipeline as DeepSeek Harness tools: find decision-shaped LLM calls, fit-check them, draft and lint typed Jev questions, and plan cascade bands. Bridges to the jev_pipeline CLI (Python).",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "jev",
+    "typesafe",
+    "typesafe-ai",
+    "system-one",
+    "pipeline",
+    "cordis"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicfei/jev-pipeline-skill.git",
+    "directory": "dsh-plugin"
+  },
+  "homepage": "https://github.com/vicfei/jev-pipeline-skill#deepseek-harness",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "dsh": ">=0.1.2-rc.1 <0.3.0-0"
+  },
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "node -e \"require('node:fs').rmSync('lib',{recursive:true,force:true})\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-tools": ">=0.1.2-rc.1 <0.3.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-tools": "0.1.6-alpha.2",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
