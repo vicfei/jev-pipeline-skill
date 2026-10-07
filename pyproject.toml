@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-pipeline-skill"
+version = "0.1.0"
+description = "One workflow for Jev question design: find → fit → draft → lint → spread → threshold → cascade. Orchestrates upstream tools by reference."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "vicfei" }]
+keywords = ["jev", "typesafe", "system-one", "decision-model", "agent-skill", "pipeline"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/vicfei/jev-pipeline-skill"
+Patterns = "https://github.com/vicfei/awesome-jev-prompts"
+
+[project.scripts]
+jev-pipeline = "jev_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["jev_pipeline*"]
