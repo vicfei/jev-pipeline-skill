@@ -5,3 +5,4 @@ jev-pipeline-out/
 .DS_Store
 dsh-plugin/node_modules/
 dsh-plugin/lib/
+pnpm-lock.yaml

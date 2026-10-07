@@ -33,11 +33,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Pin npm (runner npm 10.9 hits the 'Exit handler never called' bug)
-        run: npm install -g npm@10.8.2
-      - name: Install (retry once for flakiness)
-        run: npm ci --no-fund --no-audit || npm install --no-fund --no-audit
+      - name: Enable pnpm (runner npm 10.9 consistently hits the 'Exit handler never called' bug on this dependency tree)
+        run: corepack enable && corepack prepare pnpm@latest --activate
+      - name: Install
+        run: pnpm install --no-frozen-lockfile
       - name: Typecheck
-        run: npm run typecheck
+        run: pnpm run typecheck
       - name: Build
-        run: npm run build
+        run: pnpm run build
