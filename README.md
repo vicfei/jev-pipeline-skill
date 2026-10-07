@@ -14,6 +14,14 @@ Find where your codebase makes LLM calls that are really decisions, check whethe
 
 ## Install & quickstart
 
+Install as an **agent skill** (Claude Code, Codex, OpenCode, and other agents that support the open skills format):
+
+```bash
+npx skills add vicfei/jev-pipeline-skill
+```
+
+Or use the CLI directly:
+
 ```bash
 git clone https://github.com/vicfei/jev-pipeline-skill && cd jev-pipeline-skill
 pip install -e .

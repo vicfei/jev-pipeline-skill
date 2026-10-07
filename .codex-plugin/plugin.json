@@ -1,0 +1,22 @@
+{
+  "name": "jev-pipeline",
+  "version": "0.1.0",
+  "description": "Jev question-design pipeline: find decision-shaped LLM calls, fit-check them, draft typed Choice/Score/Noul questions, lint, calibrate thresholds, and plan cascade bands. Orchestrates upstream community tools by reference.",
+  "author": {
+    "name": "vicfei",
+    "url": "https://github.com/vicfei"
+  },
+  "homepage": "https://github.com/vicfei/jev-pipeline-skill",
+  "repository": "https://github.com/vicfei/jev-pipeline-skill",
+  "license": "MIT",
+  "keywords": [
+    "jev",
+    "typesafe",
+    "system-one",
+    "pipeline",
+    "prompt-engineering",
+    "structured-output",
+    "codex"
+  ],
+  "skills": "./skills/"
+}

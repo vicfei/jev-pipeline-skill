@@ -14,6 +14,14 @@ find ──► fit ──► draft ──► lint ──► （收集真实响�
 
 ## 快速开始
 
+**作为 agent 技能安装**（Claude Code、Codex、OpenCode 及其他支持开放技能格式的 agent）：
+
+```bash
+npx skills add vicfei/jev-pipeline-skill
+```
+
+**或直接用 CLI：**
+
 ```bash
 git clone https://github.com/vicfei/jev-pipeline-skill && cd jev-pipeline-skill
 pip install -e .

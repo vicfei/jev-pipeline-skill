@@ -1,0 +1,19 @@
+{
+  "name": "jev-pipeline",
+  "owner": { "name": "vicfei", "url": "https://github.com/vicfei" },
+  "metadata": {
+    "description": "One workflow for Jev question design: find, fit, draft, lint, spread, threshold, cascade."
+  },
+  "plugins": [
+    {
+      "name": "jev-pipeline",
+      "description": "Find decision-shaped LLM calls in a codebase, judge whether Jev / TypeSafe System One fits them, draft typed Choice/Score/Noul questions from field-tested patterns, lint them, calibrate thresholds on hard cases, and plan act/pass/escalate bands.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/jev-pipeline"],
+      "category": "development",
+      "homepage": "https://github.com/vicfei/jev-pipeline-skill",
+      "tags": ["jev", "typesafe", "system-one", "pipeline", "prompt-engineering", "structured-output"]
+    }
+  ]
+}
