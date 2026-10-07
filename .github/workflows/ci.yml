@@ -33,7 +33,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Install (retry once — npm intermittently hits 'Exit handler never called')
+      - name: Pin npm (runner npm 10.9 hits the 'Exit handler never called' bug)
+        run: npm install -g npm@10.8.2
+      - name: Install (retry once for flakiness)
         run: npm ci --no-fund --no-audit || npm install --no-fund --no-audit
       - name: Typecheck
         run: npm run typecheck
