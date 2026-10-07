@@ -14,11 +14,10 @@ Find where your codebase makes LLM calls that are really decisions, check whethe
 
 ## Install & quickstart
 
-Install as an **agent skill** (Claude Code, Codex, OpenCode, and other agents that support the open skills format):
+Install as an **agent skill**:
 
-```bash
-npx skills add vicfei/jev-pipeline-skill
-```
+- OpenClaw / ClawHub: `clawhub install jev-pipeline` — [detail page](https://clawhub.ai/skills/jev-pipeline)
+- Claude Code, Codex, OpenCode, and other agents supporting the open skills format: `npx skills add vicfei/jev-pipeline-skill`
 
 Or use the CLI directly:
 
