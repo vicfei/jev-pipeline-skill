@@ -10,7 +10,7 @@ find ──► fit ──► draft ──► lint ──► （收集真实响�
 
 找出代码库里"本质是决策"的 LLM 调用 → 判断该不该交给 Jev → 从实战模式库起草问题 → 静态检查 → （拿到真实响应后）检验问题有没有区分度 → 在难例上校准阈值 → 输出"执行/放行/升级"的级联方案。
 
-**这是编排器，不是又一份目录。** 它以"引用而非复制"的方式调用社区最好的工具（见 [ATTRIBUTION.md](ATTRIBUTION.md)），并补上各自缺的那层胶水：贯穿全流程的统一候选记录、基于 [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts)（43 条模式，CC0）的模式化起草、以及"中间带 = 显式升级分支"的级联策略——不确定的答案永远不被平均成一个决定。
+**这是编排器，不是又一份目录。** 它以"引用而非复制"的方式调用社区最好的工具（见 [ATTRIBUTION.md](ATTRIBUTION.md)），并补上各自缺的那层胶水：贯穿全流程的统一候选记录、基于 [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts)（51 条模式，CC0）的模式化起草、以及"中间带 = 显式升级分支"的级联策略——不确定的答案永远不被平均成一个决定。
 
 ## 快速开始
 

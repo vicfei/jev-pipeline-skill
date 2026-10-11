@@ -10,7 +10,7 @@ find ──► fit ──► draft ──► lint ──► (collect responses) 
 
 Find where your codebase makes LLM calls that are really decisions, check whether each one should be a Jev question at all, draft it from a field-tested pattern, lint it, then — once you have responses — check the question discriminates, calibrate thresholds on the hard cases, and get an act/pass/escalate plan.
 
-**This is an orchestrator, not another catalog.** It wires together the best community tools by reference (never copying them — see [ATTRIBUTION.md](ATTRIBUTION.md)) and adds the glue they each lack: a unified candidate record that flows through every step, pattern-based drafting from [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts) (43 patterns, CC0), and a cascade policy where the uncertain middle band is an explicit branch, never an averaged decision.
+**This is an orchestrator, not another catalog.** It wires together the best community tools by reference (never copying them — see [ATTRIBUTION.md](ATTRIBUTION.md)) and adds the glue they each lack: a unified candidate record that flows through every step, pattern-based drafting from [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts) (51 patterns, CC0), and a cascade policy where the uncertain middle band is an explicit branch, never an averaged decision.
 
 ## Install & quickstart
 
